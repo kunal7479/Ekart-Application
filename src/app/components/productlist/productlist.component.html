@@ -1,0 +1,14 @@
+<app-filter [all]="countofallproduct" 
+[instock]="countofallinstockproduct" 
+[outofstock]="countofalloutofstockproduct"
+(radiobuttonevent)="onfilterchange($event)" >
+</app-filter>
+<div class="grid-container container mb-3 ">
+    <!-- *ngIf="selectedradiobutton === 'all' || prod.productavailability.toString() === selectedradiobutton" -->
+    <div *ngFor="let prod of product" (click)="selectedprod = prod"> 
+        <app-product  [product] = "prod" *ngIf="searchtext.trim() === ''|| prod.name.toLowerCase().includes(searchtext.toLowerCase())  || prod.brand.toLowerCase().includes(searchtext.toLowerCase())" >
+        </app-product>
+    </div>
+</div>
+
+<!-- *ngIf="prod.productavailability" -->

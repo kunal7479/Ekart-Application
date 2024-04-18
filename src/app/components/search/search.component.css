@@ -1,0 +1,22 @@
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+.btndisable{
+    border-radius: 5px;
+    border-color: black;
+}
+
+.search{
+    border:1px solid rgb(203, 203, 203);
+    border-radius: 6px;
+    padding: 5px;
+    width: 550px;  
+}
+
+.searchresult{
+    margin-left: 110px;
+}

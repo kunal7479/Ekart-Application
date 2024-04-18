@@ -1,0 +1,19 @@
+<div class="items" >
+    <div class="discount" *ngIf="product.discountprice>=0">
+        {{product.discountprice>0 ? ((product.discountprice/product.price)*100).toFixed(1)+"%OFF" : "No Discount"}}
+    </div>
+    <div class="heart-icon">
+        <i class="fa fa-heart-o"></i>
+    </div>
+    <div class="prod-image">
+        <img [src]="product.image" style="height: 250px;width: 250px;">
+    </div>
+    <div class="prod-details">
+        <h6>Rs.{{product.price}}</h6>
+        {{product.name}}<br>
+        {{product.category}}.{{product.color}}
+        <div  [ngStyle]="{fontWeight:'bold',color: product.productavailability ?  'green':'red'}">
+            {{product.productavailability ? "Product is Available" : "Product is not available"}}
+        </div>
+    </div>
+</div>

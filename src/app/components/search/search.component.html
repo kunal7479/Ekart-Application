@@ -1,0 +1,20 @@
+<div class="container my-3">
+    <div class="d-flex">
+        <input class="search me-2"  placeholder="Enter your items" #searchinput required>
+        <button class="btn btn-outline-success" type="submit" (click)="updatesearchtext(searchinput)">Search</button>
+    </div>
+    <div class="searchresult container my-3">
+        <p *ngIf="searchtext != '' ">Search result for: {{searchtext}} </p>
+    </div>
+</div>
+
+
+<!-- [hidden]="((searchtext.length==0))" -->
+<!-- btn btn-outline-success -->
+<!-- [disabled]="!searchtext" -->
+
+<!-- [(ngModel)]="searchtext" required="true" (input)="(onchangesearchtext()) -->
+<!-- Above line(16) is used for @output custom event binding -->
+
+<!-- in line 3 #searchinput is used for template reference variable it will store all the reference for input tag inside it(#searchtext)  -->
+<!-- we will pass that #searchtext in next line click function  (click)="updatesearchtext(searchinput)" -->

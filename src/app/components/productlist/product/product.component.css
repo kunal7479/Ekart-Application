@@ -1,0 +1,38 @@
+.prod-image {
+    text-align: center;
+    font-size: 30px;
+    /* height: 240px !important;
+    width: 240px !important; */
+    background-color: aqua;
+    
+  }
+  
+  .prod-details {
+    /* padding-left: 80px; */
+    /* margin-left: 50px; */
+    text-align: center;
+  }
+  
+  .items {
+    border: 2px solid rgb(246, 237, 231);
+    margin-left: 45px;
+    margin-bottom: 45px;
+    /* width: 250px; */
+    box-shadow: 0 0 6px black;
+  }
+  
+  .items:hover{
+    box-shadow: 0 0 6px black;
+    transform: scale(1.05);
+  }
+
+  .discount{
+    font-weight: bolder;
+    background-color: aquamarine;
+    text-align: center;
+  }
+  
+  .heart-icon{
+    padding-left: 5px;
+    text-align: left;
+  }
